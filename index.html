@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>404 Animation</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
@@ -24,6 +25,32 @@
     svg {
       width:100%;
       height:100vh;
+    }
+
+    .home-button {
+      position: absolute; 
+      left: 50%; 
+      top: 75%; 
+      transform: translateX(-50%); 
+      background: #dbff00; 
+      color: #4B4998; 
+      padding: 14px 30px; 
+      border-radius: 7px; 
+      font-family: 'Poppins', sans-serif; 
+      font-weight: 900; 
+      font-size: 20px; 
+      text-decoration: none; 
+      box-shadow: 0 0 15px #dbff00; 
+      z-index: 10; 
+      white-space: nowrap;
+      -webkit-tap-highlight-color: transparent;
+      transition: all 0.3s ease;
+    }
+
+    .home-button:hover {
+      background: #f0ff73;
+      box-shadow: 0 0 20px #dbff00;
+      transform: translateX(-50%) scale(1.05);
     }
   </style>
 </head>
@@ -50,6 +77,10 @@
       </g>
     </g>
   </svg>
+
+  <a href="https://html-lab.net" class="home-button">
+    Volver al Inicio
+  </a>
 
   <script>
     const tl = gsap.timeline({
